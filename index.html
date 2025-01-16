@@ -104,5 +104,18 @@ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </a>
 </span>
 </footer>
+<script>
+  function toggleMenu() {
+    document.querySelector('.ul-menu').classList.toggle('open');
+  }
+
+  // Close the menu when a link is clicked
+  const menuLinks = document.querySelectorAll('.ul-menu li a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelector('.ul-menu').classList.remove('open');
+    });
+  });
+</script>
 </body>
 </html>
