@@ -239,7 +239,7 @@ margin:auto
 }
 
 .education, .skills, .automation-project {
-	width: 60%;
+width: 60%;
 }
 
 .video-container iframe {
@@ -256,9 +256,7 @@ max-width: 650px;
 @media screen and (max-width: 1300px) {
 
 .ul-menu {
-        
 margin: 35px;
-          
 }
 
 .ul-menu a {
@@ -331,8 +329,13 @@ h1{
 font-size: 60px;
  }
 
-.ul-menu 
-{display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;margin: 20px;}
+.ul-menu {
+display: flex
+;flex-wrap: wrap;
+justify-content: center;
+gap: 10px;
+ margin: 20px;
+}
 
 .ul-menu a {
 display: inline-block;
