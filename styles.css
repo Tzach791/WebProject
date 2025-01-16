@@ -331,7 +331,8 @@ h1{
 font-size: 60px;
  }
 
-.ul-menu {display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;margin: 20px;}
+.ul-menu 
+{display: flex;flex-wrap: wrap;justify-content: center;gap: 10px;margin: 20px;}
 
 .ul-menu a {
 display: inline-block;
@@ -438,4 +439,82 @@ margin: 2px 0;
 .header {
 padding: 0 5px;
 }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white; /* White color */
+  margin: 5px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hamburger:hover div {
+  background-color: lightblue;
+}
+
+/* Original Menu Styles */
+.ul-menu {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.ul-menu li {
+  display: inline-block;
+}
+
+.ul-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ul-menu li a:hover {
+  color: lightblue;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show the hamburger menu */
+  }
+
+  .ul-menu {
+    display: none; /* Hide the original menu by default on small screens */
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    background-color: #333; /* Match the header background color */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 50px;
+    z-index: 999;
+  }
+
+  .ul-menu.open {
+    display: flex; 
+  }
+
+  .ul-menu li {
+    margin: 20px 0;
+  }
+
+  .ul-menu li a {
+    font-size: 20px;
+  }
 }
