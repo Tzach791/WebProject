@@ -466,7 +466,7 @@ padding: 0 5px;
   background-color: lightblue;
 }
 
-/* Original Menu Styles */
+
 .ul-menu {
   list-style-type: none;
   padding: 0;
@@ -492,11 +492,11 @@ padding: 0 5px;
 
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* Show the hamburger menu */
+    display: flex; 
   }
 
   .ul-menu {
-    display: none; /* Hide the original menu by default on small screens */
+    display: none; 
     width: 100%;
     text-align: center;
     flex-direction: column;
