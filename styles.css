@@ -11,7 +11,7 @@ margin:0;
 
 
 body{
-background-image: url("/html/pictures/background.jpg");
+background-image: url("./html/pictures/background.jpg");
 background-size: cover;
 background-position: center;
 }
