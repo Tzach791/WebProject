@@ -554,6 +554,32 @@ display: block;
  position: relative;
 }
 }
+
+@media screen and (max-width: 480px) {
+.ul-menu {
+ display: none;
+ position: fixed;
+ top:0;
+ right: 0;
+ width: fit-content; 
+ height: fit-content; 
+ max-height: 100vh; 
+ background-color: rgba(0, 0, 0, 0.8); 
+ flex-direction: column;
+align-items: center; 
+justify-content: flex-start;
+ z-index: 999;
+padding-top: 15px;
+padding-left: 15px; 
+transition: 0.3s;
+overflow-y: auto; 
+border-radius: 8px 0 0 8px; 
+}
+}
+
+
+
+
 @media screen and (max-width: 468px) {
 .ul-menu {
  display: none;
