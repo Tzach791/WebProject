@@ -483,8 +483,8 @@ padding: 0 5px;
 display: none;
 cursor: pointer;
 position: fixed;
-top: 20px;
-right: 20px;
+top: -1px;
+right: 1px;
 z-index: 1000;
 }
 
